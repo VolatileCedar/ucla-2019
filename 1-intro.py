@@ -1,4 +1,6 @@
-print ('helloworld')
+x = int(input())
+print(x*2)
+
 
 
 
