@@ -26,28 +26,29 @@ print("  2 - multiply")
 print("  3 - divide")
 print("  4 - powers")
 print("  5 - square root")
-print("Enter a number to choose an operation: \n")
-op = input()
 
-if op == "5":
-    a = int(input("Enter your input: "))
-    print("a ^ 1/2 =",a**(1/2))
+op = ""
+while op !="quit":
+    op = input("Enter a number to choose an operation: ")
 
-else:
+    if op == "5":
+        a = int(input("Enter your input: "))
+        print("sqrt(a) =",a**(1/2))
 
-    a = int(input("Enter your first input: "))
-    b = int(input("Enter your second input: "))
+    else:
+        a = int(input("Enter your first input: "))
+        b = int(input("Enter your second input: "))
 
-    if op == "0":
-        print("a + b =",a+b)
-    elif op == "1":
-        print("a - b =",a-b)
-    elif op == "2":
-        print("a * b =",a*b)
-    elif op == "3":
-        print("a / b =",a/b)
-    elif op == "4":
-        print("a ** b =",a**b)
+        if op == "0":
+            print("a + b =",a+b)
+        elif op == "1":
+            print("a - b =",a-b)
+        elif op == "2":
+            print("a * b =",a*b)
+        elif op == "3":
+            print("a / b =",a/b)
+        elif op == "4":
+            print("a ** b =",a**b)
 
 
 #END OF CALCULATOR
